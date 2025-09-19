@@ -48,7 +48,23 @@ Bu proje, mikroservis mimarisi ile .NET üzerinde YARP (Yet Another Reverse Prox
 - **ReverseProxy Route Çakışması**: Gateway'de aynı route'u kullanan bir controller varsa, ReverseProxy devreye girmez. Sadece proxy ile yönlendirme yapmak istiyorsan controller'ı kaldır.
 - **Seq Dashboard'da log görünmüyor**: Serilog ayarlarını ve sink tanımlarını kontrol et. `Program.cs`'de sadece `ReadFrom.Configuration` ile Serilog'u başlat.
 
-## Ek Notlar
-- Proje, mikroservis mimarisi ve YARP ile API Gateway uygulamalarını öğrenmek ve test etmek için hazırlanmıştır.
-- Docker Compose ile kolayca tüm servisleri ayağa kaldırabilir, ReverseProxy ve merkezi loglama ile izlenebilirlik sağlayabilirsin.
-- Sorun yaşarsan logları ve ayarları kontrol et, yukarıdaki notları uygula.
+# Son Yapılan Çalışmalar
+
+## JWT Authentication ve Authorization
+- Gateway servisine JWT doğrulama ve token üretimi eklendi.
+- Gateway'de `/api/auth/login` endpointi ile kullanıcıya JWT token döndürülüyor.
+- CatalogService ve Gateway'de JWT doğrulama için aynı secret key, issuer ve audience ayarları kullanıldı.
+- CatalogService'de Swagger arayüzüne JWT ile yetkilendirme desteği eklendi (Authorize butonu ile token girilebilir).
+- CatalogController'da gelen JWT token okunup doğrulanıyor, eksik/geçersizse 401 dönüyor.
+
+## Güvenli Servis Erişimi
+- Gateway üzerinden alınan JWT token ile CatalogService'e güvenli şekilde erişim sağlanıyor.
+- Tüm yetkili endpointler için `[Authorize]` attribute'u kullanıldı.
+
+## Hata ve Sorunlar
+- JWT anahtar uzunluğu ve eşleşmesi ile ilgili hatalar giderildi.
+- Swagger'da token ile yetkilendirme ve test imkanı sağlandı.
+- Docker ve reverse proxy ayarlarında servis adresleri ve portlar kontrol edildi.
+
+---
+Yukarıdaki adımlar ile mikroservisler arası güvenli iletişim ve merkezi kimlik doğrulama sağlanmıştır.
