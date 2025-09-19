@@ -1,3 +1,4 @@
+using Gateway.Controllers;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,16 +6,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services
     .AddReverseProxy()
     .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<RequestResponseLoggingFilter>();
+});
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient();
 
 // Serilog ve Seq entegrasyonu
 builder.Host.UseSerilog((context, config) =>
 {
-    config
-        .ReadFrom.Configuration(context.Configuration)
-        .WriteTo.Seq("http://localhost:5341");
+    config.ReadFrom.Configuration(context.Configuration);
+    
 });
 
 var app = builder.Build();

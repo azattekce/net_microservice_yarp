@@ -14,7 +14,7 @@ namespace Gateway.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
-        [HttpPost]
+     /*    [HttpPost]
         public async Task<IActionResult> CreateOrderDebug([FromBody] object order)
         {
             return await LogAndExecuteAsync(async () =>
@@ -24,6 +24,6 @@ namespace Gateway.Controllers
                 var content = await response.Content.ReadAsStringAsync();
                 return Content(content, "application/json");
             });
-        }
+        } */
     }
 }

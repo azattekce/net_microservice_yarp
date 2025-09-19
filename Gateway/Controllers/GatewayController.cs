@@ -4,11 +4,19 @@ namespace Gateway.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class GatewayController : ControllerBase
+    public class GatewayController : BaseController
     {
-        [HttpGet("ping")]
-        public IActionResult Ping()
+
+         private readonly IHttpClientFactory _httpClientFactory;
+        public GatewayController(IHttpClientFactory httpClientFactory)
         {
+            _httpClientFactory = httpClientFactory;
+        }
+
+        [HttpGet("ping")]
+        public async Task<IActionResult> Ping()
+        {
+            await Task.CompletedTask;
             return Ok("Gateway is running.");
         }
     }
