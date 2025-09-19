@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "Gateway.Controllers.GatewayController",
+    "Method": "Ping",
+    "RelativePath": "api/Gateway/ping",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "Name": "Multi-http",
+    "Projects": [
+      {
+        "Path": "CatalogService\\CatalogService.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "OrderService\\OrderService.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "Gateway\\Gateway.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      }
+    ]
+  },
+  {
+    "Name": "Multi-https",
+    "Projects": [
+      {
+        "Path": "CatalogService\\CatalogService.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "OrderService\\OrderService.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "Gateway\\Gateway.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      }
+    ]
+  }
+]
