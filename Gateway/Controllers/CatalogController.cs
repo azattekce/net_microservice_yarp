@@ -6,7 +6,7 @@ namespace Gateway.Controllers
 {
     [ApiController]
     [Route("api/catalog")]
-    public class CatalogController : ControllerBase
+    public class CatalogController : BaseController
     {
         private readonly IHttpClientFactory _httpClientFactory;
         public CatalogController(IHttpClientFactory httpClientFactory)
@@ -14,13 +14,16 @@ namespace Gateway.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
-        //[HttpGet]
-        //public async Task<IActionResult> GetCatalog()
-        //{
-        //    var client = _httpClientFactory.CreateClient();
-        //    var response = await client.GetAsync("http://localhost:5001/api/catalog");
-        //    var content = await response.Content.ReadAsStringAsync();
-        //    return Content(content, "application/json");
-        //}
+        [HttpGet]
+        public async Task<IActionResult> GetCatalogDebug()
+        {
+            return await LogAndExecuteAsync(async () =>
+            {
+                var client = _httpClientFactory.CreateClient();
+                var response = await client.GetAsync("http://localhost:5001/api/catalog");
+                var content = await response.Content.ReadAsStringAsync();
+                return Content(content, "application/json");
+            });
+        }
     }
 }

@@ -24,7 +24,6 @@ C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\obj\Debug\net8.0\
 C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Gateway.props
 C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Gateway.props
 C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\obj\Debug\net8.0\staticwebassets.pack.json
-C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\obj\Debug\net8.0\Gateway.csproj.Up2Date
 C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\obj\Debug\net8.0\Gateway.dll
 C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\obj\Debug\net8.0\refint\Gateway.dll
@@ -36,3 +35,16 @@ C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\
 C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\obj\Debug\net8.0\Gateway.MvcApplicationPartsAssemblyInfo.cs
+C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Serilog.dll
+C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Serilog.Sinks.PeriodicBatching.dll
+C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\bin\Debug\net8.0\Serilog.Sinks.Seq.dll
+C:\zattekce\Projects\workplace\.NET\YARP\MicroYarpDemo\Gateway\obj\Debug\net8.0\Gateway.sourcelink.json
